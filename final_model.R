@@ -249,7 +249,7 @@ svm_radial_Grid <- train(Diabetes ~., data = train_stand, method = "svmRadial",
                          tuneGrid = grid_radial,
                          tuneLength = 10)
 svm_radial_Grid
-#sigma is 0.02 and C = 0.25
+#sigma is 0.01 and C = 0.5
 plot(svm_radial_Grid)
 
 #test tuned radial model
